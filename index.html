@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banmala</title>
+  <link rel="icon" type="image" href="/images/logo-fav.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#000000]">
+
+  <!-- Navbar -->
+  <div id="mainNavbar" class="fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="text-3xl font-bold flex gap-4 items-center ">
+          <img src="./images/logo-banmala.jpg" alt="TLON" class="w-12 overflow-hidden">
+          Banmala
+        </a>
+        
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="nav-toggler" class=" focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-6 md:order-1">
+          <a href="#projects" class="font-medium  hover:text-blue-600">Projects</a>
+          <a href="#education" class="font-medium  hover:text-blue-600">Education</a>
+          <a href="#skills" class="font-medium  hover:text-blue-600">Skills</a>
+          <a href="#experience" class="font-medium  hover:text-blue-600">Experiences</a>
+          <a href="#contact-me" class="font-medium  hover:text-blue-600">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="opacity-0 md:opacity-0 bg-white w-full fixed inset-0 flex flex-col gap-[20px] items-center justify-center transition-opacity duration-500">
+    <a href="#projects" class="block px-4 py-2 text-5xl">Projects</a>
+    <a href="#education" class="block px-4 py-2 text-5xl">Education</a>
+    <a href="#skills" class="block px-4 py-2 text-5xl">Skills</a>
+    <a href="#experience" class="block px-4 py-2 text-5xl">Experiences</a>
+    <a href="#contact-me" class="block px-4 py-2 text-5xl">Contact Me</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero md:h-screen">
+    <div class="bg-[#00000099] h-[50vh] md:h-screen flex flex-col justify-center items-center text-center max-sm:px-[30px]">
+      <h1 class="text-5xl text-white md:text-6xl font-bold mb-4">Hello Everyone!!</h1>
+      <p class="text-xl md:text-2xl mb-6 text-gray-300">Here is my brief portfolio.</p>
+      <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-blue-700 transition">
+        Explore My Projects
+      </a>
+    </div>
+  </section>
+
+  <!-- projects Section -->
+  <section id="projects" class="py-20 bg-gray-200">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-3">Projects</h2>
+      <p class="text-gray-600 text-lg">Discover some of my projects</p>
+    </div>
+  </section>
+
+  <!-- education Section -->
+  <section id="education" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-3">My Education</h2>
+      <p class="text-gray-600 text-lg">Here is my education details</p>
+    </div>
+  </section>
+
+  <!-- skills Section -->
+  <section id="skills" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-3">My Skills</h2>
+      <p class="text-gray-600 text-lg">Here are my skills</p>
+    </div>
+  </section>
+
+  <!-- experience Section -->
+  <section id="experience" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-3">My Experiences</h2>
+      <p class="text-gray-600 text-lg">Here is my life and professional experiences</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-me" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="space-y-6">
+        <h2 class="text-4xl font-bold">Warm Regards from Banmala</h2>
+        <p class="text-lg text-gray-300">Driven by curiosity, powered by learning.</p>
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <i class="fas fa-envelope text-blue-500 text-xl"></i>
+            <span>banmalasunil@gmail.com</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-phone text-blue-500 text-xl"></i>
+            <span>+977 9841-223344</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
+            <span>Nangkhel, Suryabinayak-9, Bhaktapur</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form class="bg-white p-8 rounded-2xl space-y-4 text-gray-900" action="https://formspree.io/f/mnngajlk" method="POST">
+          <h4 class="text-2xl font-semibold mb-4">In case of any query</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+                name="name" 
+                type="text" 
+                placeholder="Full Name" 
+                class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                required
+            >
+            <input 
+                type="contactNumber" 
+                placeholder="Contact Number" 
+                class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                required
+            >
+            <textarea
+              name="query"
+              placeholder="If you have any queries" 
+              rows="4" 
+              class="col-span-1 md:col-span-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+              required></textarea>
+          </div>
+          <button 
+            type="submit" 
+            class="w-full bg-blue-600 text-white py-3 rounded-lg flex justify-center items-center gap-2 hover:bg-blue-700 transition"
+          >
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>&copy; 2025 Banmala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

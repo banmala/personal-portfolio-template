@@ -1,0 +1,63 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lexend', sans-serif;
+}
+#mainNavbar {
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    color:rgb(226, 219, 207);
+}
+#mainNavbar.scrolled {
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    color: black;
+}
+
+.hero{
+  width: 100%;
+  background-image: url("/images/banmala.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#team{
+    background: linear-gradient(135deg, #dcffb6 0%, #ffdce1 100%);
+}
+
+#projects{
+    background-color: #ffffff;
+}
+#education{
+    background-color: #ffffff;
+}
+#skills{
+    background-color: #ffffff;
+}
+#education{
+    background-color: #ffffff;
+}
+#join-us{
+    background-color: #ffffff;
+}
+
+section{
+    min-height: 50vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+
