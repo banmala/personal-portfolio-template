@@ -18,30 +18,57 @@ body {
 
 .hero{
   width: 100%;
-  background-image: url("/images/banmala.png");
+  background-image: url("../images/banmala.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: black;
 }
 
-#team{
-    background: linear-gradient(135deg, #dcffb6 0%, #ffdce1 100%);
+.cursorFollowerFirst {
+    position: fixed;
+    width: 100rem;
+    height: 100rem;
+    background: 
+        radial-gradient(circle at 45% 45%, #fff570 0px, transparent 40%);
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+    mix-blend-mode: normal;
+    z-index: -999;
+    pointer-events: none;
+}
+.cursorFollowerSecond {
+    position: fixed;
+    width: 100rem;
+    height: 100rem;
+    background: 
+        radial-gradient(circle at 60% 60%, #7bcabe 0px, transparent 40%);
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+    mix-blend-mode: normal;
+    z-index: -999;
+    pointer-events: none;
+}
+.cursorFollowerThird {
+    position: fixed;
+    width: 100rem;
+    height: 100rem;
+    background: 
+        radial-gradient(circle at 40% 48%, #f7d9de 0px, transparent 40%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+    -webkit-transform: transform 0.3s;
+    mix-blend-mode: normal;
+    z-index: -999;
+    pointer-events: none;
 }
 
-#projects{
-    background-color: #ffffff;
-}
-#education{
-    background-color: #ffffff;
-}
-#skills{
-    background-color: #ffffff;
-}
-#education{
-    background-color: #ffffff;
-}
-#join-us{
-    background-color: #ffffff;
+
+#projects, #education, #skills, #experience{
+    border: #7bcabe 1px solid;
+    border-radius: 20px;
+    background-color: #ffffff55;
 }
 
 section{
